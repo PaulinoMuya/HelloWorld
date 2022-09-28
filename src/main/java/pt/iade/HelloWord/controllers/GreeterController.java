@@ -16,11 +16,6 @@ public class GreeterController {
         return "Hello World";
     } 
 
-
-
-
-
-
     @GetMapping(path = "{name}", 
     produces= MediaType.APPLICATION_JSON_VALUE) 
     public String getGreeting(@PathVariable("name") String name) { 
